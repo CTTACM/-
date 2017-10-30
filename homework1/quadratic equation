@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<math.h>
+#define f 0.00001
+int main()
+{
+	float a=1,b=3,c=-5.6;
+	float dia = sqrt(b*b - 4*a*c);
+	if(dia < 0) printf("no answer!");
+	else if (dia <= f) printf("the answer is %f",(-b+dia)/2*a);
+	else printf("x1 = %lf \n x2 = %f",(-b+dia)/2*a,(-b-dia)/2*a);
+	return 0; 
+}
